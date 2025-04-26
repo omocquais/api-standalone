@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: api-standalone
+
+api:
+  products:
+    url: http://localhost:9999/api/products

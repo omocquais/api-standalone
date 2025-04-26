@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "label": "Product 1",
+      "imported": true,
+      "type": "nourriture",
+      "price": 15.12
+    },
+    {
+      "id": 2,
+      "label": "Product 2",
+      "imported": false,
+      "type": "livres",
+      "price": 25.45
+    },
+    {
+      "id": 3,
+      "label": "Product 3",
+      "imported": true,
+      "type": "nourriture",
+      "price": 52.12
+    },
+    {
+      "id": 4,
+      "label": "Product 4",
+      "imported": true,
+      "type": "médicaments",
+      "price": 32.45
+    },
+    {
+      "id": 5,
+      "label": "Product 5",
+      "imported": true,
+      "type": "nourriture",
+      "price": 15.12
+    },
+    {
+      "id": 6,
+      "label": "Product 6",
+      "imported": false,
+      "type": "livres",
+      "price": 25.45
+    },
+    {
+      "id": 7,
+      "label": "Product 7",
+      "imported": true,
+      "type": "nourriture",
+      "price": 41.22
+    },
+    {
+      "id": 8,
+      "label": "Product 8",
+      "imported": true,
+      "type": "médicaments",
+      "price": 85.12
+    },
+    {
+      "id": 9,
+      "label": "Product 9",
+      "imported": true,
+      "type": "nourriture",
+      "price": 41.22
+    },
+    {
+      "id": 10,
+      "label": "Product 10",
+      "imported": false,
+      "type": "médicaments",
+      "price": 15.14
+    }
+  ]
+}

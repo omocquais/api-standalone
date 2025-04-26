@@ -1,0 +1,26 @@
+{
+  "productsOrdered": [
+    {
+      "product": {
+        "id": 5,
+        "label": "Product 5",
+        "imported": true,
+        "type": "nourriture",
+        "priceExcludingTax": 15.12,
+        "priceIncludingTax": 15.92
+      },
+      "quantity": 5
+    },
+    {
+      "product": {
+        "id": 6,
+        "label": "Product 6",
+        "imported": false,
+        "type": "livres",
+        "priceExcludingTax": 25.45,
+        "priceIncludingTax": 28
+      },
+      "quantity": 2
+    }
+  ]
+}
