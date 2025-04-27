@@ -55,7 +55,9 @@ public class ProductService implements ProductInPort {
             }
         }
 
-        InvoiceDetails invoiceDetails = new InvoiceDetails(productsList, basketPriceExcludingTax, basketPriceIncludingTax);
+        Price basketTotalAmountTaxes =  basketPriceIncludingTax.subtract(basketPriceExcludingTax);
+
+        InvoiceDetails invoiceDetails = new InvoiceDetails(productsList, basketTotalAmountTaxes , basketPriceIncludingTax);
 
         LOGGER.info("Get invoice details - end: {}", invoiceDetails);
 

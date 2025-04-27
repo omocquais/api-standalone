@@ -62,7 +62,7 @@ class ProductServiceTest {
         assertThat(invoiceDetails.products()).isNotNull().isNotEmpty().hasSize(15).containsOnly(product1, product2);
 
         assertThat(invoiceDetails.basketPriceIncludingTax()).isNotNull().isEqualTo(new Price(146.45));
-        assertThat(invoiceDetails.basketPriceExcludingTax()).isNotNull().isEqualTo(new Price(131.95));
+        assertThat(invoiceDetails.basketTotalAmountTaxes()).isNotNull().isEqualTo(new Price(14.50));
     }
     @Test
     void getInvoiceDetailsInvalidProductId() {

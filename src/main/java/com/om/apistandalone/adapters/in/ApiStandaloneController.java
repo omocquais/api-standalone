@@ -93,7 +93,7 @@ public class ApiStandaloneController {
 
         InvoiceDetails invoiceDetails = productInPort.getInvoiceDetails(productOrderedList);
 
-        BasketDTO basketDTO = new BasketDTO(invoiceDetails.basketPriceExcludingTax().amount(),
+        BasketDTO basketDTO = new BasketDTO(invoiceDetails.basketTotalAmountTaxes().amount(),
                 invoiceDetails.basketPriceIncludingTax().amount());
 
         List<ProductDTO> products =

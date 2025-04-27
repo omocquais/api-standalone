@@ -21,6 +21,13 @@ class PriceTest {
     }
 
     @Test
+    void subtract() {
+        Price result = new Price(10.0).subtract(new Price(3.0));
+        Price expected = new Price(7.00);
+        assertEquals(expected, result);
+    }
+
+    @Test
     void multiplyBtAmountInDouble() {
         Price result = new Price(10.15).multiply(3.0);
         Price expected = new Price(30.45);

@@ -196,7 +196,7 @@ class ApiStandaloneControllerTest {
                     .satisfies(invoiceDTO -> {
                         assertThat(invoiceDTO.uuid()).isNotNull();
                         assertThat(invoiceDTO.products()).isNotEmpty().hasSize(7);
-                        assertThat(invoiceDTO.basket().priceExcludingTax()).isEqualTo(BigDecimal.valueOf(84.84));
+                        assertThat(invoiceDTO.basket().totalAmountTaxes()).isEqualTo(BigDecimal.valueOf(21.70));
                         assertThat(invoiceDTO.basket().priceIncludingTax()).isEqualTo(BigDecimal.valueOf(106.54));
                     });
         }

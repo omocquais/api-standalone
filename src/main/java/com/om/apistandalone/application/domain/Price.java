@@ -21,6 +21,10 @@ public record Price(BigDecimal amount, Currency currency) {
         return new Price(this.amount.multiply(BigDecimal.valueOf(amount)), currency);
     }
 
+    public Price subtract(Price price) {
+        return new Price(this.amount.subtract(price.amount()), currency);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -33,6 +37,4 @@ public record Price(BigDecimal amount, Currency currency) {
     public int hashCode() {
         return Objects.hash(amount.stripTrailingZeros(), currency);
     }
-
-
 }

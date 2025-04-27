@@ -145,7 +145,7 @@
 
 ```json
 {
-  "uuid": "531322d3-426a-47b8-9d77-d311ba3a4078",
+  "uuid": "07ee8398-8ad3-4a42-a98b-d05585d60bd8",
   "products": [
     {
       "id": 5,
@@ -205,7 +205,7 @@
     }
   ],
   "basket": {
-    "priceExcludingTax": 126.50,
+    "totalAmountTaxes": 9.10,
     "priceIncludingTax": 135.60
   }
 }
