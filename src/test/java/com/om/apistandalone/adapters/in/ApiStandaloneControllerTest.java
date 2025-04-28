@@ -124,11 +124,7 @@ class ApiStandaloneControllerTest {
         void getProductByBadId() {
 
             List<Product> productlist = new ArrayList<>();
-
-            //Given
-            for (int i = 0; i < 10; i++) {
-                productlist.add(new Product(new ProductId(i), "aLabel" + i, true, ProductType.OTHERS, new Price(12.12)));
-            }
+            productlist.add(new Product(new ProductId(1), "aLabel", true, ProductType.OTHERS, new Price(12.12)));
 
             when(apiPort.getProducts()).thenReturn(productlist);
 
