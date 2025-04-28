@@ -156,6 +156,20 @@ class ApiStandaloneControllerTest {
             ).hasStatus(HttpStatus.BAD_REQUEST);
         }
 
+        @DisplayName("When a negative price is provided as an input parameter, it should return a 400 HTTP error")
+        @Test
+        void invalidBasketNegativePrice() throws JsonProcessingException {
+            ProductDTO productDTO = new ProductDTO(1, "a label", true, ProductType.BOOKS, BigDecimal.valueOf(-12.12),
+                    BigDecimal.valueOf(124.124));
+            List<ProductOrderedDTO> productOrderedDTOS = List.of(new ProductOrderedDTO(productDTO, 1));
+
+            assertThat(mockMvcTester.post()
+                    .content(new ObjectMapper().writeValueAsString(new BasketRequestDTO(productOrderedDTOS)))
+                    .contentType(MediaType.APPLICATION_JSON)
+                    .uri("/basket")
+            ).hasStatus(HttpStatus.BAD_REQUEST);
+        }
+
         @DisplayName("Given an empty list of products as the input parameter, it should return a 400 HTTP error")
         @Test
         void invalidBasketWithEmptyList() throws JsonProcessingException {
